@@ -28,6 +28,23 @@ you do skip the {}. like
       x++; `
   
 - placeholder `%d`
-
-
+- throw an error `throw new IllegalArgumentException()`
+- string append something at the end `string.append("")"`
  
+- `String.format(""%d")` as placeholder
+- resize of an array, or dynamic array
+  - copy a to b (with a resized capacity), and copy back
+## Type parameters
+- element could be any "type"
+- element can only be objects, rather than any fundamental type, like int, char, boolean etc
+- all basic types have their own wrapper class, like Integer, Boolean
+    - autoboxing
+- then specify the object type
+    - `Class<Integer> class = new Class<>();`
+  
+## Time complexity
+- worst situation
+- amortized time complexity
+  - resize for array, add N times, resize once (instruction N times) O(1)
+- expected time complexity 
+  - add or remove in array without resize O(n)
