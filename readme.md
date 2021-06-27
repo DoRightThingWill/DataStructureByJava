@@ -48,3 +48,13 @@ you do skip the {}. like
   - resize for array, add N times, resize once (instruction N times) O(1)
 - expected time complexity 
   - add or remove in array without resize O(n)
+  
+## Common data structure
+- list
+    - queue
+    - stack
+    - array
+    - LinkedList
+- tree
+- graph
+
