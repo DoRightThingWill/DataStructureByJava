@@ -50,11 +50,27 @@ you do skip the {}. like
   - add or remove in array without resize O(n)
   
 ## Common data structure
-- list
-    - queue
-    - stack
-    - array
-    - LinkedList
+- list 
+  - array
+    - static array, java generic, find by index, add\delete O(n)
+    - dynamic array, resize the capacity, add\delete O(n)
+    - loop array, index % length, add\delete, O(1)
+    - sparse array
+  - linked list
+    - singly linked list
+    - doubly linked list 
+  - stack
+    - implemented by array
+      - array stack
+      - fast array stack
+      - rootish array stack
+  - queue
+    - implemented by array
+        - array queue
+        - array deque
+        - dual array deque
+    - deque
+    - priority queue
 - tree
 - graph
 

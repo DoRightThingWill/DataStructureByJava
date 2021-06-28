@@ -4,8 +4,10 @@ import com.guangya.data_structure_by_java.Array.IntArray;
 import com.guangya.data_structure_by_java.Array.TypeArray;
 import com.guangya.data_structure_by_java.ArrayQueue.ArrayQueue;
 import com.guangya.data_structure_by_java.ArrayQueue.LoopQueue;
+import com.guangya.data_structure_by_java.ArrayQueue.Queue;
 import com.guangya.data_structure_by_java.Stack.ArrayStack;
 
+import java.util.Random;
 import java.util.Stack;
 
 public class Main {
@@ -17,7 +19,12 @@ public class Main {
 //        System.out.println(bracketMatch("([{}])"));
 //        System.out.println(bracketMatch("([{)])"));
 //        runArrayQueue();
-        runLoopQueue();
+//        runLoopQueue();
+        int capacity = 100000;
+        ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
+        LoopQueue<Integer> loopQueue = new LoopQueue<>();
+        System.out.println(runTimeTest(arrayQueue,capacity));
+        System.out.println(runTimeTest(loopQueue,capacity));
     }
 
     public static void runIntArray (){
@@ -113,6 +120,19 @@ public class Main {
                 queue.dequeue();
             System.out.println(queue);
         }
+    }
+
+    public static double runTimeTest(Queue<Integer> queue, int capacity){
+        double startTime = System.nanoTime();
+        Random random =new Random();
+        // enqueue
+        for (int i = 0; i <capacity ; i++)
+            queue.enqueue(random.nextInt(Integer.MAX_VALUE));
+        // dequeue
+        for (int i = 0; i < capacity; i++)
+            queue.dequeue();
+        double endTime = System.nanoTime();
+        return (endTime-startTime)/1000000000.0;
     }
 }
 
