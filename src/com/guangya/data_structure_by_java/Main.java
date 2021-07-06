@@ -13,13 +13,13 @@ import java.util.Stack;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code hereR
-//        runTypeArray();
-//        runArrayStack();
-//        System.out.println(bracketMatch("([{}])"));
-//        System.out.println(bracketMatch("([{)])"));
-//        runArrayQueue();
-//        runLoopQueue();
+//	 write your code hereR
+        runTypeArray();
+        runArrayStack();
+        System.out.println(bracketMatch("([{}])"));
+        System.out.println(bracketMatch("([{)])"));
+        runArrayQueue();
+        runLoopQueue();
         int capacity = 100000;
         ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
         LoopQueue<Integer> loopQueue = new LoopQueue<>();

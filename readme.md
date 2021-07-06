@@ -1,4 +1,4 @@
-## this is notes taken via learning Data Strcture Design and Analysis by Java
+## this is notes taken via learning Data Structure Design and Analysis by Java
 
 ** I am going to introduce implementations of several very popular data structure
 
@@ -30,7 +30,6 @@ you do skip the {}. like
 - placeholder `%d`
 - throw an error `throw new IllegalArgumentException()`
 - string append something at the end `string.append("")"`
- 
 - `String.format(""%d")` as placeholder
 - resize of an array, or dynamic array
   - copy a to b (with a resized capacity), and copy back
@@ -42,8 +41,10 @@ you do skip the {}. like
 - then specify the object type
     - `Class<Integer> class = new Class<>();`
   
+- T, K, V, E are the symbols that could be used as type parameters. T means type, k =key, v = value, e=element. Theoretically, they do not have much difference
+  
 ## Time complexity
-- worst situation
+- the worst situation
 - amortized time complexity
   - resize for array, add N times, resize once (instruction N times) O(1)
 - expected time complexity 
@@ -56,8 +57,17 @@ you do skip the {}. like
     - dynamic array, resize the capacity, add\delete O(n)
     - loop array, index % length, add\delete, O(1)
     - sparse array
+    - `ArrayList` in java is an arrayBased list (not a linked list). 
+      - static array, capacity can not be automatically changed. 
+      - static array, can store, generic data type, + objects;
+      - `ArrayList` automatically resize, and can only store objects.
   - linked list
     - singly linked list
+      - linked list has one or two pointers, like next , prev. They are also nodes
+      - to initiate the linked list, we could assign value (node) to next, or prev;
+      - or assign them as null, like `next=null`
+      - or simply leave there, do not touch, they will be automatically assigned null;
+      - but not, use `next = new Node()`, which will lead to infinite iteration. 
     - doubly linked list 
   - stack
     - implemented by array
@@ -74,3 +84,34 @@ you do skip the {}. like
 - tree
 - graph
 
+## java syntax
+- in front a class or method with parameters, `/**` enter, will show `/** 
+  *@parra thisparameter
+  */`
+## tree
+- binary tree, shang gui gu, video 90;
+- basic concept
+  - root
+  - leaf
+  - node? 
+  - level 
+  - branch
+  - height, max levels
+  - forest
+
+## searching method
+- linear search
+- binary search
+    - has to be ordered list or array
+    - left and right
+    - mid value
+    - if value not exists, end the recursion by checking left > right
+- interpolation search
+    - improved binary search
+    - the factor is not 1/2, but depends on the actual values
+    - when element not evenly distributed, interpolation may not be much better than binary search
+- fibonacci search
+
+## Java syntax
+- static variable or method does not rely on objects to be initiated. With the `className.method()`, the static method could run
+- another line
