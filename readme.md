@@ -115,3 +115,32 @@ you do skip the {}. like
 ## Java syntax
 - static variable or method does not rely on objects to be initiated. With the `className.method()`, the static method could run
 - another line
+
+## hash table
+  - a-z, 26 letter, build an array to index them
+  - int[] test = int[26]; int[i] =  char(i) - 'a'. ascII code
+  - hash function design
+    - small int, directly us
+    - negative int, + a number, convert to positive
+    - big int, %
+      - get the last four digit, % 10000
+      - hash collision
+      - % a prime number, reduce collision somehow
+      - then which prime number to use
+        - http://planetmath.org/goodhashtableprimes
+    - float 
+    - string
+      - code = c*26^3 + o*26^2 + d*26^1 + e*26^0
+      - hash(code) = (c*26^3 + o*26^2 + d*26^1 + e*26^0) % M (M is prime)
+        - if the code has 100 letters, you need to calculate 26^99, crazy
+        - then we convert,
+          - hash(code) = (((c*26 +o)*26+d)*26+e)%  M (M is prime)
+          - as per number theory, B = 26
+          - hash(code) = ((((c%M)*B+o)%M*B+d)%M +e)%M 
+          - code implementation
+          - `int hash=0
+            for(int i=0; i<s.length(); i++
+                 hash = (hash*B + s.charAt(i)) % M;`
+    - in java, Object has a method, hashCode(), convert the object to int;
+      - `int a =42;
+        (Integer)a.hashCode();`
