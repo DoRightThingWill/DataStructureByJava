@@ -144,3 +144,10 @@ you do skip the {}. like
     - in java, Object has a method, hashCode(), convert the object to int;
       - `int a =42;
         (Integer)a.hashCode();`
+        
+  - collision handling
+    - separate chaining
+    - (hashCode(k1)& 0x7fffffff) % M, M is a prime
+      - The numbers starting with 0x are hexadecimal (base 16)
+      - A hex digit can be any of the following 16 digits: 0 1 2 3 4 5 6 7 8 9 A B C D E F. Each hex digit reflects a 4-bit binary sequence
+      - the result is always a positive number
