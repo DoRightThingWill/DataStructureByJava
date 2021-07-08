@@ -151,3 +151,26 @@ you do skip the {}. like
       - The numbers starting with 0x are hexadecimal (base 16)
       - A hex digit can be any of the following 16 digits: 0 1 2 3 4 5 6 7 8 9 A B C D E F. Each hex digit reflects a 4-bit binary sequence
       - the result is always a positive number
+    - open address
+      - linear probing, search by ONE increment, starting from the index of hash value
+      - i = (i+1)%t.length;
+      - hashtable almost equals USet. un-sorted
+      - for linear probing, needs a large amount of null space for fast operations
+        - that means, resize() is very important
+      - how to express 2^n in java ? 1<<n 
+      - add(x), remove(x), update(x), search(x), are all o(1) for linearProbingHashTable
+  
+## binary tree (BT)
+  - traverse
+    - pre-order: 
+      - print current node
+      - traverse left sub-tree use pre-order recurse
+      - traverse right sub-tree using pre-order recursion
+    - inorder
+      - if left not null, traverse left sub-tree using inorder recursion
+      - print current node (root)
+      - if right not null, traverse right sub-tree using inorder recursion
+    - post-order
+      - if left not null, traverse left sub-tree using postorder recursion
+      - if right not null, traverse right sub-tree using postorder recursion
+      - print current node (root)
