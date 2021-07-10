@@ -174,3 +174,8 @@ you do skip the {}. like
       - if left not null, traverse left sub-tree using postorder recursion
       - if right not null, traverse right sub-tree using postorder recursion
       - print current node (root)
+  - search 
+    - preorder
+    - in order
+    - post order
+  
