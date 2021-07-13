@@ -178,4 +178,6 @@ you do skip the {}. like
     - preorder
     - in order
     - post order
+  - depth first search -- preorder, inorder, post order
+  - width first search -- breadth search
   
