@@ -180,4 +180,30 @@ you do skip the {}. like
     - post order
   - depth first search -- preorder, inorder, post order
   - width first search -- breadth search
+  - depth, what is? from root to node, how many nodes in total?
+  - height, from node to most far leaf node, how many nodes in total?
+ 
+## Set
+  - no duplication
+  - implemented by binary search tree
+    - non duplication
+    - total order
+    - 
+## Map 
+  - roughly equal to dictionary?
+  - in python, a map is called a dict
+  - key --> value (detailed information)
+
+## black-red tree
+  - root node is black
+  - leaf node (external node, null node) are all black;
+  - for black red tree, leaf node is external node
+
+## B tree
+  - self-balancing
+  - allow for nodes with more than two children
+  - one node store more than one values
+  - somehow ordered 
+  - add elements, must be at the leaf node level
+  
   

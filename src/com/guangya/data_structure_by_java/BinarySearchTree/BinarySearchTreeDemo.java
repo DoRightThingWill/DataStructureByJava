@@ -29,7 +29,7 @@ public class BinarySearchTreeDemo {
     }
 }
 
-class BinarySearchTree {
+class BinarySearchTree<E extends Comparable<E>> {
     private Node root;
 
     // add node
