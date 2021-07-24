@@ -27,8 +27,12 @@ public class ArrayStack<T> extends AbstractList<T> {
 	 * The number of elements stored
 	 */
 	int n;
-	
-	/**
+
+    public ArrayStack() {
+
+    }
+
+    /**
 	 * Resize the internal array
 	 */
 	protected void resize() {

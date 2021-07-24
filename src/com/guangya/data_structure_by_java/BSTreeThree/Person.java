@@ -1,4 +1,4 @@
-package com.guangya.data_structure_by_java.WoodyA3;
+package com.guangya.data_structure_by_java.BSTreeThree;
 
 public class Person implements Comparable<Person> {
     private int age;

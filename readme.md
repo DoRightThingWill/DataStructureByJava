@@ -205,5 +205,11 @@ you do skip the {}. like
   - one node store more than one values
   - somehow ordered 
   - add elements, must be at the leaf node level
+
+## graph
+  - adjacent matrix, needs extra space
+  - adjacent linked list
+  - with and without direction
+  - 
   
   

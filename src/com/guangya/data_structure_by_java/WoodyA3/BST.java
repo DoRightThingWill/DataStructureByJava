@@ -1,4 +1,4 @@
-package com.guangya.data_structure_by_java.WoodyPractiseComp272A2;
+package com.guangya.data_structure_by_java.WoodyA3;
 
 public class BST<E extends Comparable<E>> {
 
