@@ -8,7 +8,7 @@ import java.util.Date;
 public class QuickSort {
     public static void main(String[] args) {
 
-        int [] arr = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
+        int [] arr = {3, 1, 4, 1, 5, 6, 2, 6, 5, 3, 5,9};
 //
         quickSort(arr,0, arr.length-1);
         System.out.println(Arrays.toString(arr));
@@ -52,11 +52,11 @@ public class QuickSort {
         // while loop to place number less than pivot in the left side, and those larger than pivot in the right side
         while(l<r){
             // first, l moves from left to right, until find an element not less than pivot
-            while(arr[l]<pivot)
+            while(arr[l]< pivot)
                 // if l element is less pivot, l continues moving right, l++
                 l +=1;
             // then, r moves from right to left, until find an element not larger than pivot
-            while(arr[r]>pivot)
+            while(arr[r]> pivot)
                 // if r element is larger than pivot, r continues moving left, r--
                 r -=1;
             if(l>=r){// when l>=r, this round partition done
@@ -70,7 +70,7 @@ public class QuickSort {
             arr[l] = arr[r];
             arr[r] = temp;
 
-            // once exchagne done, check if arr[l] == pivot
+            // once exchange done, check if arr[l] == pivot
             if(arr[l]==pivot)
                 r-=1;
             // if arr[r] == pivot
