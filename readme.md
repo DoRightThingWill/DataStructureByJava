@@ -1,6 +1,4 @@
-## this is notes taken via learning Data Structure Design and Analysis by Java
-
-** I am going to introduce implementations of several very popular data structure
+## I am going to introduce implementations of several very popular data structure, and please feel free to fork if you like it
 
 ## array basics
 
